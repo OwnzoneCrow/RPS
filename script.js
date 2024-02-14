@@ -10,3 +10,12 @@ return choices[Math.floor (Math.random() * choices.length)];
 
 }
 console.log(getComputerChoice(choices))
+
+function playRound(playerSelection, computerSelection){
+
+    // filler (more or less need to have results of winning or losing)
+// if 
+// else if
+// else 
+
+}
