@@ -11,11 +11,26 @@ return choices[Math.floor (Math.random() * choices.length)];
 }
 console.log(getComputerChoice(choices))
 
+
+
 function playRound(playerSelection, computerSelection){
 
-    // filler (more or less need to have results of winning or losing)
-// if 
-// else if
-// else 
+if (
+    (playerSelection === 'rock' && computerSelection === 'rock')||
+    (playerSelection === 'paper' && computerSelection === 'paper')||
+    (playerSelection === 'scissors' && computerSelection === 'scissors'))
+    {return "It's a tie!";}
+else if (
+    (playerSelection === 'rock' && computerSelection === 'scissors')||
+    (playerSelection === 'paper' && computerSelection === 'rock')||
+    (playerSelection === 'scissors' && computerSelection === 'paper'))
+    {return "You Win!";}
+else 
+    {return "You Lose!";}
 
 }
+
+const playerSelection = 'paper';
+const computerSelection = getComputerChoice(choices);
+const result = playRound(playerSelection,computerSelection);
+console.log(result);
