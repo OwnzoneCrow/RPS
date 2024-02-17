@@ -1,7 +1,7 @@
 console.log("RPS")
 //  RPS Variable, why does it have to be a let, and not a const //
 let choices = ['rock', 'paper', 'scissors']
-
+let playerSelection = prompt ("Rock, Paper, or Scissors? (undercase please)");
 // function to pull the computer's choice; this seems kind of weird but I assume this has to do with arrays at the end?//
 
 function getComputerChoice(choices){
@@ -28,9 +28,16 @@ else if (
 else 
     {return "You Lose!";}
 
-}
 
-const playerSelection = 'paper';
+
+}
 const computerSelection = getComputerChoice(choices);
 const result = playRound(playerSelection,computerSelection);
 console.log(result);
+
+
+// function playGame() {
+//   for(let i = 0; i <=4; i++){
+//     playRound();
+//   }
+// }
